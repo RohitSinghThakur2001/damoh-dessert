@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+#border-line{
+    height: 1px;
+    width: 95vw;
+    
+    background-color: rgb(82, 80, 80);
+    margin: 2% auto 0 auto;
+}
+#main {
+  width: 100dvw;
+  /* background-color: beige; */
+  overflow: hidden;
+}
+#page1 {
+  height: 100dvh;
+  overflow: hidden;
+}
+#page1 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 3%;
+  height: 20%;
+  
+}
+
+#page1 nav i{
+    scale: 1.5;
+    cursor: pointer;
+}
+#page1 .search-bar i{
+    color: rgb(99, 99, 99);
+}
+#page1 .nav-left>div,.nav-right>div,.ribbon>span{
+    cursor: pointer;
+}
+#page1 .nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  gap: 30px;
+}
+#page1 .nav-left img {
+  height: 30px;
+}
+
+#page1 .nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+#page1 .nav-right div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+#page1 .nav-right .search-bar {
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 10px;
+  width: 40%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+#page1 .nav-right .search-bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 80%;
+  font-size: 1.1vw;
+}
+#page1 .ribbon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5vw;
+  padding: 15px;
+  border: 1px solid rgb(169, 169, 169);
+  height: 10%;
+  font-weight: 700;
+  font-size: 1.6vw;
+  background-color: rgb(253, 252, 230);
+}
+
+#page1 .content{
+    padding: 3%;
+}
+#page1 .slider {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+#page1 .slider > div {
+  display: inline-block;
+  animation: slide 15s infinite linear;
+}
+
+#page1 .slider  img {
+  height: 100%;
+  width: 33%;
+  cursor: grab;
+  border-radius: 15px;
+}
+
+#page1 .slider:hover div {
+    animation-play-state: paused;
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* #page2 is started form here  */
+
+#page2 {
+    background-color: rgb(251, 251, 249);
+    overflow: hidden;
+}
+#page2 .header{
+    height: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding:2% 5%;
+    font-size: 20px;
+    font-size: 5vh;
+    font-weight: 600;
+    background-color: rgb(242, 235, 235);
+    width: 95%;
+    margin: auto    ;
+}
+#page2 .cake-catalogue{
+    padding: 4%;
+    display: flex;
+    gap: 20px;
+}
+#page2 .my-cake {
+    border: 1px solid rgb(173, 169, 169);
+    width:fit-content;
+    font-weight: 600;
+    border-radius: 15px ;
+    width: 30%;
+
+}
+#page2 .my-cake img{
+    width: 100%;
+    border-radius: 15px;
+}
+#page2 .my-cake .cake-info{
+    padding: 10px;
+}
+#page2 .cake-info .veg-nonveg i{
+    color: green;
+}
+#page2 .cake-info .cake-rating i{
+    color: rgb(209, 163, 0);
+}
+
+
+
+#page3{
+height: 100vh;
+display: flex;
+background-color: #fff;
+}
+#page3 .left{
+    height: 100%;
+}
+#page3 .right{
+    padding: 2%;
+    width: 100%;
+}
+#page3 .right .header{
+    font-size: 2vw;
+    padding-left: 10%;
+}
+#page3 .right form{
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+}
+#page3 .right form input,textarea{
+    padding: 10px;
+    outline-color: #FF5F5D;
+}
+#page3 .right #submit{
+    background-color: #FF5F5D;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
